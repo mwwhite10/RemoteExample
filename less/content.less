@@ -1,0 +1,53 @@
+#content {
+	padding: 30px;
+
+	color: @whiteText;
+
+	font-family: Arial, sans-serif;
+
+	p{
+		line-height: 25px;
+	}
+
+	h1 {
+		margin-bottom: 20px;
+	}
+
+	@media only screen and (max-device-width : 470px), only screen and (max-width : 470px){
+
+		h1{
+			text-align: center;
+			width: 90%;
+			margin: 0 auto;
+			margin-bottom: 20px;
+			font-size: 34px;
+		}
+
+		p{
+			text-align: left;
+			width: 90%;
+			margin: 0 auto;
+		}
+
+	}
+
+	/* iPhone 4 ----------- */
+	@media
+	only screen and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (min-device-pixel-ratio : 1.5) {
+		h1{
+			text-align: center;
+			width: 90%;
+			margin: 0 auto;
+			margin-bottom: 20px;
+			font-size: 34px;
+		}
+
+		p{
+			text-align: left;
+			width: 90%;
+			margin: 0 auto;
+		}
+	}
+
+}
